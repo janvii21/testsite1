@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id = "red" onclick=red()>Red</button>
+    <button id = "blue" onclick=blue()>blue</button>
+    <button id = "green" onclick=green()>green</button>
+    <button id = "color" onclick=color()>color</button>
+</body>
+<script>
+    function red() {
+        document.body.style.backgroundColor = 'red';
+    }
+    function blue() {
+        document.body.style.backgroundColor = 'blue';
+    }
+    function green() {
+        document.body.style.backgroundColor = 'green';
+    }
+    function color(){
+        setInterval(function(){
+        
+            document.body.style.backgroundColor = 'yellow';
+           
+        }, 1000)
+        setInterval(function(){
+        
+            document.body.style.backgroundColor = 'pink';
+           
+        }, 2000)
+        setInterval(function(){
+        
+            document.body.style.backgroundColor = 'orange';
+           
+        }, 3000)
+    }
+    
+</script>
+</html>
